@@ -1,0 +1,23 @@
+body {
+  background-image: url('../images/flag.jpg');
+  overflow: hidden;
+}
+
+form {
+  background-color: grey;
+  width: 10vw;
+  margin: 45vh 45vw 45vh 45vw;
+}
+
+form input {
+  margin: 2px;
+  align-content: center;
+}
+
+form input[type='text'] {
+  display: block;
+}
+
+#errors {
+  display: none;
+}

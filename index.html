@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <title>Assignment 2 Sean McCarthy</title>
+    <link rel="stylesheet" href="./assets/css/page.css">
   </head>
   <body>
-    <div class="container" id="contentContainer">
-      <form>
-        <input type="text" name="first name" placeholder="First Name">
-        <input type="text" name="last name" placeholder="Last Name">
+      <div id="errors"></div>
+      <form id="pleaseVote">
+        <input id="firstName" type="text" name="first name" placeholder="First Name">
+        <input id="lastName" type="text" name="last name" placeholder="Last Name">
         <br>
 
-        <input type="radio" name="president" value="HilDog"> Hillary
-        <input type="radio" name="president" value="Toupee"> Trump
+        <input id="hillary" type="radio" name="president" value="HilDog"> Hillary
+        <input id="trump" type="radio" name="president" value="Toupee"> Trump
         <br>
 
-        <input type="text" name="reason" placeholder="Why?">
-        <input type="submit" value="Submit">
+        <input id="reason" type="text" name="reason" placeholder="Why?">
+        <button type="button" onClick="submitForm()"> Submit</button>
       </form>
-    </div>
+
+    <script src="assets/js/form-control.js"></script>
   </body>
 </html>
